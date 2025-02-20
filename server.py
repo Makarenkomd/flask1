@@ -11,6 +11,20 @@ def index0():
 def index():
     return "И на Марсе будут яблони цвести!"
 
+@app.route('/image_mars')
+def image_mars():
+    return '''
+<html>
+<head>
+<title>Привет, Марс!</title>
+</head>
+<body>
+<h1>Жди нас, Марс!</h1>
+<img src="/static/images/MARS.png">
+<p>Вот она какая, красная планета.</p>
+</body>
+</html>'''
+
 @app.route('/promotion')
 def promotion():
 
