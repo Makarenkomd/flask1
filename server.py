@@ -11,10 +11,20 @@ def index0():
 def index():
     return "И на Марсе будут яблони цвести!"
 
-@app.route('/start')
-def start():
-    s = "<html>" + "<br>".join(map(str, list(range(1, 11))[::-1])) +"<br>Start!</html>"
-    print(s)
+@app.route('/promotion')
+def promotion():
+
+    s = '''<html>
+Человечество вырастает из детства. <br>
+
+Человечеству мала одна планета.<br>
+
+Мы сделаем обитаемыми безжизненные пока планеты.<br>
+
+И начнем с Марса!<br>
+
+Присоединяйся!
+</html>'''
     return s
 
 
